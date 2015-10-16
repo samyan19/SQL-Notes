@@ -1,3 +1,3 @@
 # SQL-Notes
 
-sss
+Notes on SQL topics
