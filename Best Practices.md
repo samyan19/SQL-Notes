@@ -20,3 +20,4 @@
 
 #####Memory for OS
 * https://sqlserverperformance.wordpress.com/2009/10/29/suggested-max-memory-settings-for-sql-server-20052008/
+* https://sqlmem.codeplex.com/downloads/get/720296
