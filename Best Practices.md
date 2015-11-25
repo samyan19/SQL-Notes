@@ -14,3 +14,7 @@
 * .25:1 
 * https://technet.microsoft.com/en-gb/library/cc966534.aspx
 * http://sqlblog.com/blogs/linchi_shea/archive/2007/01/29/how-many-data-files-should-i-create-for-a-user-database.aspx
+* http://www.sqlskills.com/blogs/paul/benchmarking-do-multiple-data-files-make-a-difference/
+
+#####Memory for OS
+* https://sqlserverperformance.wordpress.com/2009/10/29/suggested-max-memory-settings-for-sql-server-20052008/
