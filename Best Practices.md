@@ -10,6 +10,7 @@
 #####Tempdb
 * files 1:1 with CPU up to 8
 * https://support.microsoft.com/en-us/kb/2154845
+* https://www.simple-talk.com/sql/database-administration/estimating-disk-space-requirements-for-databases/
 
 #####Data files to CPU
 * .25:1 
