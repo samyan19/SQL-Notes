@@ -1,4 +1,4 @@
-##Availabity Groups Notes - SQL in the City
+##SQL in the City- Availabity Groups Notes
 
 * sys.dm_os_wait_stats
 * execution plans can be different on the secondary, statistics, server settings
