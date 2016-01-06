@@ -10,3 +10,7 @@
 
 ####HA
 * asynchronous mirroring enterprise only feature
+
+####CPU
+* trace flag 8649 - use to force parallelism by dropping cost theshold to 0. useful for development 
+
