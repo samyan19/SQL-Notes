@@ -1,0 +1,35 @@
+[-c] (not as a service)
+
+[-d file] (alternative master data file)
+
+[-l file] (alternative master log file)
+
+[-e file] (alternate errorlog file)
+
+[-f] (minimal configuration mode)
+
+[-m] (single user admin mode)
+
+[-g number] (stack MB to reserve)
+
+[-k <decimal number>] (checkpoint speed in MB/sec)
+
+[-n] (do not use event logging)
+
+[-s name] (alternate registry key name)
+
+[-T <number>] (trace flag turned on at startup)
+
+[-x] (no statistics tracking)
+
+[-y number] (stack dump on this error)
+
+[-B] (breakpoint on error (used with -y))
+
+[-K] (force regeneration of service master key (if exists))
+
+[-v] (list version information)
+
+-f and –c are the option we need to consider. In case you have a named instance, you need to specify the named instance with the –s option.
+
+sqlservr -s MSSQLSERVER -f –c
