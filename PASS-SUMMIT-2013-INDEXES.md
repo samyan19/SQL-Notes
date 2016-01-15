@@ -11,3 +11,7 @@
 * clustered index always 1
 * leaf level is level 0
 * root is always in system tables, old sysindexes has root column
+* Clus index contains the table/b-tree on top/uniquefier added to non-cluster column
+* 2 thougts 1) clustered index on most frequently used column 2) clustered index to organise colmns
+* page splits occur upwards also/new root created
+* page splits/sec measures new allocations/new extended event to meahure this in 2012
