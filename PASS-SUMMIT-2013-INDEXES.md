@@ -27,3 +27,10 @@
 * OR operation requires index on each columns
 * case = function= no index
 * joins=where columns first, then join columns
+##Indexes - Tim Chapman
+* heap 
+  * unorder   
+  * table withou clustered index
+  * PFS page used to check for pages with space (64 mb allocation)
+  * ALTER TABLE REBUILD to reduce fragmentation , forwarding pointers
+* 
