@@ -27,6 +27,7 @@
 * OR operation requires index on each columns
 * case = function= no index
 * joins=where columns first, then join columns
+
 ##Indexes - Tim Chapman
 * heap 
   * unorder   
