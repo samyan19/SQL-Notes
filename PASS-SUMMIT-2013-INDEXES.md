@@ -27,6 +27,7 @@
 * OR operation requires index on each columns
 * case = function= no index
 * joins=where columns first, then join columns
+* cix=clustered index/ idx=nonclustered
 
 ##Indexes - Tim Chapman
 * heap 
@@ -34,4 +35,28 @@
   * table withou clustered index
   * PFS page used to check for pages with space (64 mb allocation)
   * ALTER TABLE REBUILD to reduce fragmentation , forwarding pointers
-* 
+* non clustered
+  * the leaf contains the index columns and clustred key which is pointer to base table
+  * included column at the leaf level only
+* index internals
+  * sys.dm_db_database_page_allocations - to see pages in a table 2012+ **replacement for DBCC IND**, **0 is data**
+  * DBCC PAGE (<db_name>,file,page,3)with TABLERESULTS to see uniquefier
+  * *is there a cost to not defining unique in your indexes?*
+  * sys.fn_PhysLocFormatter(%%physloc%%)
+* statistics
+  * dbcc show statistics
+  * range_rows are between the range (not including those numbers)
+  * AUTO_CREATE predicate used which is not known to the optimiser
+  * AUTO_UPDATE - 20% + 200 rows changed -
+  * AUTO_UPDATE_ASYNC - query which triggers recomp doesnt have to wait
+  * Trace 2371 - reduce RT (recomp threshold)
+  * statistics io = number of pages touched in the buffer pool
+* Maintenance
+  * reorg
+    * Stats are not updated
+    * online
+    * stopped and you wont lose work
+  * reindex
+    * all or nothing
+    * 30% frg
+    * will update with fullscan (edge case with 2012)
