@@ -14,3 +14,5 @@
 ####CPU
 * trace flag 8649 - use to force parallelism by dropping cost theshold to 0. useful for development 
 
+####Sleeping Process
+* Sleeping process with high cpu and IO does not indicate current performance (entries are cumulative)
