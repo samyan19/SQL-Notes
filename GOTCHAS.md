@@ -16,3 +16,6 @@
 
 ####Sleeping Process
 * Sleeping process with high cpu and IO does not indicate current performance (entries are cumulative)
+
+####INternals
+* sys.sysallocunits - system table which identifies root_page and IAM page for option
