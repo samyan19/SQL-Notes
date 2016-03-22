@@ -1,3 +1,6 @@
+####Backups
+* Backups are run as the sql service account 
+
 ####Recovery model
 * Full to bulk logged does not break the chain
 
